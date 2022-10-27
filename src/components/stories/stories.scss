@@ -1,73 +1,153 @@
 @import "../../style.scss";
 
 .stories {
-  display: flex;
-  gap: 10px;
   height: 250px;
-  margin-bottom: 30px;
+  width: 600px;
 
-  @include mobile {
-    height: 50px;
-    margin-bottom: 0;
-    justify-content: space-between;
+  .left-arrow {
+    position: absolute;
+    top: 30%;
+    margin-left: 20px;
+    z-index: 2;
+    transform-origin: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-20%);
+    justify-content: center;
+
+    &:hover {
+      background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    &:hover svg {
+      opacity: 1.2;
+      transform: scale(1.2);
+    }
+
+    svg {
+      opacity: 0.6;
+      font-size: 35px;
+      transition: all 0.3 linear;
+    }
   }
+  .right-arrow {
+    position: absolute;
+    top: 30%;
+    margin-left: 550px;
+    z-index: 2;
+    transform-origin: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-20%);
+    justify-content: center;
 
-  @include tablet{
-    height: 150px;
-    gap: 20px;
+    &:hover {
+      background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    &:hover svg {
+      opacity: 1.2;
+      transform: scale(1.2);
+    }
+
+    svg {
+      opacity: 0.6;
+      font-size: 35px;
+      transition: all 0.3 linear;
+    }
   }
-
-  .story {
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
+  .slider {
+    display: flex;
+    gap: 10px;
+    height: 250px;
+    width: 600px;
+    margin-bottom: 30px;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: #081449 3px solid;
 
     @include mobile {
-      flex: none;
-      width: 50px;
       height: 50px;
-      border-radius: 50%;
+      margin-bottom: 0;
+      justify-content: space-between;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    @include tablet {
+      height: 150px;
+      gap: 20px;
     }
-    span {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: white;
-      font-weight: 500;
+
+    .story {
+      box-sizing: border-box;
+      width: 150px;
+      height: 250px;
+      flex: 1;
+      position: relative;
+
+
       @include mobile {
-        display: none;
+        flex: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
       }
-    }
 
-    button {
-      position: absolute;
-      bottom: 40px;
-      left: 10px;
-      color: white;
-      background-color: #5271ff;
-      border: none;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      font-size: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      img {
+        width: 150px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 10px;
+      }
 
-      @include mobile {
-       left: 0;
-       right: 0;
-       top: 0;
-       bottom: 0;
-       margin: auto;
+      span {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+
+
+      button {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        color: white;
+        background-color: #5271ff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
       }
     }
   }
