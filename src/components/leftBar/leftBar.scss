@@ -32,6 +32,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        :hover{
+          background-color: themed(bgHover);
+        }
 
         span {
           font-size: 12px;

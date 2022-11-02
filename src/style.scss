@@ -2,6 +2,7 @@ $themes: (
   light: (
     textColor: #000,
     bg: white,
+    bgHover: rgb(199, 199, 199),
     bgstories: rgba(45, 189, 45, 0.432),
     logo: darkblue,
     bgSoft: #f6f3f3,
@@ -11,6 +12,7 @@ $themes: (
   dark: (
     textColor: whitesmoke,
     bg: #222,
+    bgHover: rgb(99, 99, 99),
     bgstories: rgba(136, 121, 121),
     logo: white,
     bgSoft: #333,

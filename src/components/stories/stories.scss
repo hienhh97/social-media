@@ -3,21 +3,23 @@
 .stories {
   @include themify($themes){
   height: 250px;
-  width: 600px;
+  width: 700px;
   margin-bottom: 30px;
   background-color: themed('bgstories');
   border-radius: 10px;
 
   .left-arrow {
-    position: absolute;
-    top: 30%;
-    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 150px;
+    box-sizing: border-box;
+    left: 20px;
     z-index: 2;
     transform-origin: center;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 40px;
-    width: 40px;
+
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -40,15 +42,15 @@
     }
   }
   .right-arrow {
-    position: absolute;
-    top: 30%;
-    margin-left: 550px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 190px;
+    left: 640px;
     z-index: 2;
     transform-origin: center;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -73,44 +75,45 @@
   .slider {
     display: flex;
     gap: 10px;
-    height: 250px;
-    width: 600px;
-    margin-bottom: 30px;
-    position: relative;
+    position: initial;
+    z-index: 1;
+    //margin-bottom: 30px;
     overflow: hidden;
     border-radius: 10px;
     border: #081449 3px solid;
     box-sizing: border-box;
 
     @include mobile {
-      height: 50px;
-      margin-bottom: 0;
+      height: 250px;
+      width: 100%;
       justify-content: space-between;
     }
 
     @include tablet {
-      height: 150px;
-      gap: 20px;
+      height: 250px;
+      gap: 2px;
     }
 
     .story {
       box-sizing: border-box;
       width: 150px;
       height: 250px;
+      z-index: 1;
       flex: 1;
       position: relative;
 
 
       @include mobile {
         flex: none;
-        width: 50px;
+        width: 150px;
         height: 50px;
         border-radius: 50%;
+        gap: 10px;
       }
 
       img {
         width: 150px;
-        height: 250px;
+        height: 230px;
         object-fit: cover;
         border-radius: 10px;
         margin: 10px 10px;

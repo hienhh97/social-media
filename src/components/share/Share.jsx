@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/authContext";
 
 const Share = () => {
 
-  const {currentUser} = useContext(AuthContext)
+  const { currentUser } = useContext(AuthContext)
   return (
     <div className="share">
       <div className="container">
@@ -21,24 +21,24 @@ const Share = () => {
         <hr />
         <div className="bottom">
           <div className="left">
-            <input type="file" id="file" style={{display:"none"}} />
+            <input type="file" id="file" style={{ display: "none" }} />
             <label htmlFor="file">
               <div className="item">
                 <img src={Image} alt="" />
-                <span>Add Image</span>
+                <span>Thêm ảnh</span>
               </div>
             </label>
             <div className="item">
               <img src={Map} alt="" />
-              <span>Add Place</span>
+              <span>Thêm địa điểm</span>
             </div>
             <div className="item">
               <img src={Friend} alt="" />
-              <span>Tag Friends</span>
+              <span>Gắn thẻ bạn bè</span>
             </div>
           </div>
           <div className="right">
-            <button>Share</button>
+            <button>Chia sẻ</button>
           </div>
         </div>
       </div>

@@ -75,15 +75,15 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <SettingsOutlinedIcon />
-              Cài đặt
+              <span>Cài đặt</span>
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <HelpOutlineIcon />
-              Trợ giúp và phản hồi
+              <span>Trợ giúp và phản hồi</span>
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <ExitToAppIcon />
-              Đăng xuất
+              <span>Đăng xuất</span>
             </MenuItem>
           </Menu>
         </div>
