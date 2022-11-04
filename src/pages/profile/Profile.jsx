@@ -34,26 +34,17 @@ const Profile = () => {
             <a href="http://facebook.com">
               <InstagramIcon fontSize="large" />
             </a>
-            <a href="http://facebook.com">
-              <TwitterIcon fontSize="large" />
-            </a>
-            <a href="http://facebook.com">
-              <LinkedInIcon fontSize="large" />
-            </a>
-            <a href="http://facebook.com">
-              <PinterestIcon fontSize="large" />
-            </a>
           </div>
           <div className="center">
-            <span>Jane Doe</span>
+            <span>Hua Hien</span>
             <div className="info">
               <div className="item">
                 <PlaceIcon />
-                <span>USA</span>
+                <span>Vietnam</span>
               </div>
               <div className="item">
                 <LanguageIcon />
-                <span>lama.dev</span>
+                <span>https://github.com/hienhh97</span>
               </div>
             </div>
             <button>follow</button>
@@ -63,7 +54,7 @@ const Profile = () => {
             <MoreVertIcon />
           </div>
         </div>
-      <Posts/>
+        <Posts />
       </div>
     </div>
   );
