@@ -10,21 +10,22 @@ export const Register = () => {
                     <p>
                         This website made by hienhh97!
                     </p>
-                    <span>
-                        You already have an account? Login now!
-                    </span>
-                    <Link to= "/login">
-                    <button>Login</button>
-                    </Link>
                 </div>
                 <div className="right">
-                    <h1>REGISTER</h1>
+                    <h1>Đăng ký</h1>
                     <form>
-                        <input type="text" placeholder="Username"/>
-                        <input type="email" placeholder="Email"/>
-                        <input type="password" placeholder="Password"/>
-                        <button>Register</button>
+                        <input type="text" placeholder="Tên đăng nhập" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Mật khẩu" />
                     </form>
+                    <button id="btn__register">Đăng ký</button>
+
+                    <span>
+                        Bạn đã có tài khoản?
+                    </span>
+                    <Link to="/login">
+                        <button id="btn__login">Tới trang đăng nhập</button>
+                    </Link>
                 </div>
             </div>
         </div>

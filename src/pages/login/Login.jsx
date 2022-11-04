@@ -18,20 +18,20 @@ const Login = () => {
                     <p>
                         This website made by hienhh97!
                     </p>
-                    <span>
-                        Do not have an account? Creat and join with us!!
-                    </span>
-                    <Link to="/register">
-                        <button>Register</button>
-                    </Link>
                 </div>
                 <div className="right">
-                    <h1>LOGIN</h1>
+                    <h1>Đăng nhập</h1>
                     <form>
                         <input type="text" placeholder="Username" />
                         <input type="password" placeholder="Password" />
-                        <button onClick={handleLogin}>Login</button>
                     </form>
+                    <button onClick={handleLogin} id="btn__login">Đăng nhập</button>
+                    <span>
+                        Chưa có tài khoản?
+                    </span>
+                    <Link to="/register">
+                        <button id="btn__register">Tạo tài khoản mới</button>
+                    </Link>
                 </div>
             </div>
         </div>
