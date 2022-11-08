@@ -1,13 +1,9 @@
 import "./profile.scss";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PlaceIcon from "@mui/icons-material/Place";
 import LanguageIcon from "@mui/icons-material/Language";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Posts from "../../components/posts/Posts"
 
 const Profile = () => {
@@ -27,31 +23,34 @@ const Profile = () => {
       </div>
       <div className="profileContainer">
         <div className="uInfo">
-          <div className="left">
-            <a href="http://facebook.com">
-              <FacebookTwoToneIcon fontSize="large" />
-            </a>
-            <a href="http://facebook.com">
-              <InstagramIcon fontSize="large" />
-            </a>
-          </div>
           <div className="center">
             <span>Hua Hien</span>
+            <button>follow</button>
             <div className="info">
               <div className="item">
                 <PlaceIcon />
-                <span>Vietnam</span>
+                <span>Hanoi, Vietnam</span>
               </div>
               <div className="item">
                 <LanguageIcon />
                 <span>https://github.com/hienhh97</span>
               </div>
             </div>
-            <button>follow</button>
           </div>
-          <div className="right">
-            <EmailOutlinedIcon />
-            <MoreVertIcon />
+          <div className="left">
+            <a href="http://facebook.com">
+              <FacebookTwoToneIcon fontSize="large" />
+              facebook.com/huahien2409
+            </a>
+            <a href="http://facebook.com">
+              <InstagramIcon fontSize="large" />
+              facebook.com/huahien2409
+            </a>
+            <a href="http://facebook.com">
+              <TwitterIcon fontSize="large" />
+              facebook.com/huahien2409
+
+            </a>
           </div>
         </div>
         <Posts />

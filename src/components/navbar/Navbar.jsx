@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span>Social Media UI</span>
+          <span>Social Media</span>
         </Link>
         {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} />

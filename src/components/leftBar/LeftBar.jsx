@@ -55,7 +55,7 @@ const LeftBar = () => {
           <span>Lối tắt</span>
           <MenuItem className="item">
             <img src={Events} alt="" />
-            <span>Sự kiện sắp diễn ra</span>
+            <span>Sự kiện</span>
           </MenuItem>
           <MenuItem className="item">
             <img src={Gaming} alt="" />
@@ -75,7 +75,7 @@ const LeftBar = () => {
           <span>Nội dung khác</span>
           <MenuItem className="item">
             <img src={Fund} alt="" />
-            <span>Hoạt động gây quỹ</span>
+            <span>Gây quỹ</span>
           </MenuItem>
           <MenuItem className="item">
             <img src={Tutorials} alt="" />
